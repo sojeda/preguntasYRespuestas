@@ -166,7 +166,7 @@ var preguntas = [
         pregunta = "¿En qué año Sarmiento fue nombrado presidente?",
         opciones: {
         a = "1810",
-        b = "1880",
+        b = "1868",
         c = "1860",
         d = '1915',
         },
