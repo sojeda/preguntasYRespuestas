@@ -1,3 +1,6 @@
+var trivia = document.getElementById("trivia");
+var results = document.getElementById("results");
+var submit = document.getElementById("submit");
 var preguntas = [
     {
         pregunta: '¿Cuantas copas Libertadores tiene el equipo Boca juniors?',
