@@ -133,6 +133,7 @@ var preguntas = [
         correcta: 'b',
     },
     {
+<<<<<<< HEAD
         pregunta: "¿Qué comen los Koalas?",
         opciones: {
             a: "Papas Fritas",
@@ -231,6 +232,66 @@ var preguntas = [
             d: "Muricio Macri" 
         },
         correcta: "a"
+=======
+        question = "¿En qué día se llevó a cabo la Revolución de mayo?",
+        answers: {
+        a = "10 de mayo",
+        b = "9 de julio",
+        c = "20 de junio",
+        d = '25 de mayo',
+        },
+        wright: 'd',
+    },
+    {
+        question = "¿En qué día se firmó el acta de la Independencia?",
+        answers: {
+        a = "10 de mayo",
+        b = "9 de julio",
+        c = "20 de junio",
+        d = '25 de mayo',
+        },
+        wright: 'd',
+    },
+    {
+        question = "¿En qué año se prohibieron las corridas de toros en Buenos Aires",
+        answers: {
+        a = "1810",
+        b = "1565",
+        c = "1954",
+        d = '1822',
+        },
+        wright: 'd',
+    },
+    {
+        question = "¿En qué año Sarmiento fue nombrado presidente?",
+        answers: {
+        a = "1810",
+        b = "1880",
+        c = "1860",
+        d = '1915',
+        },
+        wright: 'b',
+    },
+    {
+        question = "¿Cuándo se prohibió la esclavitud en la Argentina?",
+        answers: {
+        a = "1813",
+        b = "1822",
+        c = "1545",
+        d = '1860',
+        },
+        wright: 'a',
+    },
+    {
+        question = "¿Quién fundó el primer asentamiento en Buenos Aires?",
+        answers: {
+        a = "Pedro de Mendoza",
+        b = "Juan de Garay",
+        c = "Manuel Belgrano",
+        d = 'Perón',
+        },
+        wright: 'a',
+>>>>>>> f83ae6248326dc599c14b9a6fb0aa54f5abc3ebb
     }
 
     {
