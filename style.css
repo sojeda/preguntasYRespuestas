@@ -5,3 +5,13 @@ body {
 }
 
 #submit: hover{background:#f00;}
+
+#submit {
+    border: none;
+    width: 10em;
+    height: 4em;
+    background-color: grey;
+    border-radius: 3px;
+    color: white;
+    font-style: bold;
+}
