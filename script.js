@@ -133,62 +133,62 @@ var preguntas = [
         correcta: 'b',
     },
     {
-        pregunta = "¿En qué día se llevó a cabo la Revolución de mayo?",
+        pregunta : "¿En qué día se llevó a cabo la Revolución de mayo?",
         opciones: {
-        a = "10 de mayo",
-        b = "9 de julio",
-        c = "20 de junio",
-        d = '25 de mayo',
+        a : "10 de mayo",
+        b : "9 de julio",
+        c : "20 de junio",
+        d : '25 de mayo',
         },
         correcta: 'd',
     },
     {
-        pregunta = "¿En qué día se firmó el acta de la Independencia?",
+        pregunta : "¿En qué día se firmó el acta de la Independencia?",
         opciones: {
-        a = "10 de mayo",
-        b = "9 de julio",
-        c = "20 de junio",
-        d = '25 de mayo',
+        a : "10 de mayo",
+        b : "9 de julio",
+        c : "20 de junio",
+        d : '25 de mayo',
         },
         correcta: 'd',
     },
     {
-        pregunta = "¿En qué año se prohibieron las corridas de toros en Buenos Aires",
+        pregunta : "¿En qué año se prohibieron las corridas de toros en Buenos Aires",
         opciones: {
-        a = "1810",
-        b = "1565",
-        c = "1954",
-        d = '1822',
+        a : "1810",
+        b : "1565",
+        c : "1954",
+        d : '1822',
         },
         correcta: 'd',
     },
     {
-        pregunta = "¿En qué año Sarmiento fue nombrado presidente?",
+        pregunta : "¿En qué año Sarmiento fue nombrado presidente?",
         opciones: {
-        a = "1810",
-        b = "1868",
-        c = "1860",
-        d = '1915',
+        a : "1810",
+        b : "1868",
+        c : "1860",
+        d : '1915',
         },
         correcta: 'b',
     },
     {
-        pregunta = "¿Cuándo se prohibió la esclavitud en la Argentina?",
+        pregunta: "¿Cuándo se prohibió la esclavitud en la Argentina?",
         opciones: {
-        a = "1813",
-        b = "1822",
-        c = "1545",
-        d = '1860',
+        a : "1813",
+        b : "1822",
+        c : "1545",
+        d : '1860',
         },
         correcta: 'a',
     },
     {
-        pregunta = "¿Quién fundó el primer asentamiento en Buenos Aires?",
+        pregunta: "¿Quién fundó el primer asentamiento en Buenos Aires?",
         opciones: {
-        a = "Pedro de Mendoza",
-        b = "Juan de Garay",
-        c = "Manuel Belgrano",
-        d = 'Perón',
+        a : "Pedro de Mendoza",
+        b : "Juan de Garay",
+        c : "Manuel Belgrano",
+        d : 'Perón',
         },
         correcta: 'a',
     },
@@ -247,7 +247,48 @@ var preguntas = [
             c: "Martín Fierro",
         },
         correcta: 'c',
+    },
+    {
+        pregunta: "Los beatles fueron:",
+        opciones: {
+          a: "Banda de rock, nativa de Liverpool.",
+          b: "Banda de pop, nativa de Canada.",
+          c: "Banda de cuarteto, nativa de Argentina.",
+          d: "Banda de cumbia, nativa de Colombia."
+        },
+        correcta: "a"
+    },
+
+    {
+        pregunta: "¿Qué instrumento musical toca Lisa Simpson?",
+        opciones: {
+          a: "Bateria",
+          b: "Saxofon",
+          c: "Trompeta.",
+          d: "flautaa."
+        },
+        correcta: "b"
+    },
+
+    {
+        pregunta: "La comida favorita de Homer Simpson es:",
+        opciones: {
+          a: "Carne en asada",
+          b: "Cachapa",
+          c: "Donas.",
+          d: "Pizza"
+        },
+        correcta: "c"
+    },
+
+    {
+        pregunta: "¿Cual fue la empresa creadora del iphone?",
+        opciones: {
+          a: "Google",
+          b: "Samsung.",
+          c: "Facebook",
+          d: "Iphone"
+        },
+        correcta: "d"
     }
 ];
-
-
