@@ -3,3 +3,13 @@ body {
     color: blue;
     font-family: sans-serif;
 }
+
+#submit {
+    border: none;
+    width: 10em;
+    height: 4em;
+    background-color: grey;
+    border-radius: 3px;
+    color: white;
+    font-style: bold;
+}
