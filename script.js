@@ -131,5 +131,105 @@ var preguntas = [
             d: 'Mario Bross',
         },
         correcta: 'b',
+    },
+    {
+        pregunta: "¿Qué comen los Koalas?",
+        opciones: {
+            a: "Papas Fritas",
+            b: "Torta",
+            c: "Caramelos",
+            d: "Hojas de Eucalipto" 
+        },
+        correcta: "d"
+    },
+    {
+        pregunta: "¿En que país se encuentra la torre de pizza?",
+        opciones: {
+            a: "Francia",
+            b: "Italia",
+            c: "Estados Unidos",
+            d: "Alemania" 
+        },
+        correcta: "b"
+    },
+    {
+        pregunta: "¿En que país se ecuentra la torre Eiffel?",
+        opciones: {
+            a: "Francia",
+            b: "Alemania",
+            c: "Argentina",
+            d: "Inglaterra" 
+        },
+        correcta: "a"
+    },
+    {
+        pregunta: "¿Cuanto es 10 por 10?",
+        opciones: {
+            a: "1000",
+            b: "50",
+            c: "100",
+            d: "32" 
+        },
+        correcta: "c"
+    },
+    {
+        pregunta: "¿Cúal es el presidente de estados unidos en 2019?",
+        opciones: {
+            a: "José Mujica",
+            b: "Emmanuel Macron",
+            c: "Cristina Fernandez",
+            d: "Donald Trump" 
+        },
+        correcta: "d"
+    },
+    {
+        pregunta: "¿Cúal de estos es un color?",
+        opciones: {
+            a: "Azul",
+            b: "Torta",
+            c: "Caramelos",
+            d: "Campera" 
+        },
+        correcta: "a"
+    },
+    {
+        pregunta: "¿Cúal de estos es una etiqueta de HTML?",
+        opciones: {
+            a: "Pepsi",
+            b: "Torta",
+            c: "Div",
+            d: "Function" 
+        },
+        correcta: "c"
+    },
+    {
+        pregunta: "¿En que país se encuentra el obelisco en Av. 9 de Julio?",
+        opciones: {
+            a: "Alemania",
+            b: "Francia",
+            c: "Italia",
+            d: "Argentina" 
+        },
+        correcta: "d"
+    },
+    {
+        pregunta: "¿Cómo se llaman los profesores de Acamica DWFS BUE-10?",
+        opciones: {
+            a: "Armando y Saul",
+            b: "Sergio y Gabriel",
+            c: "Lorenzo y Sofia",
+            d: "Eustaquio y Arturo" 
+        },
+        correcta: "b"
+    },
+    {
+        pregunta: "¿Quíen es el presidente de Francia en 2019?",
+        opciones: {
+            a: "Emmanuel Macron",
+            b: "José Mujica",
+            c: "Donald Trump",
+            d: "Muricio Macri" 
+        },
+        correcta: "a"
     }
 ];
