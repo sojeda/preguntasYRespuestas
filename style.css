@@ -4,6 +4,8 @@ body {
     font-family: sans-serif;
 }
 
+#submit: hover{background:#f00;}
+
 #submit {
     border: none;
     width: 10em;
