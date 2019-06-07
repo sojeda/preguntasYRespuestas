@@ -133,66 +133,65 @@ var preguntas = [
         correcta: 'b',
     },
     {
-        question = "¿En qué día se llevó a cabo la Revolución de mayo?",
-        answers: {
+        pregunta = "¿En qué día se llevó a cabo la Revolución de mayo?",
+        opciones: {
         a = "10 de mayo",
         b = "9 de julio",
         c = "20 de junio",
         d = '25 de mayo',
         },
-        wright: 'd',
+        correcta: 'd',
     },
     {
-        question = "¿En qué día se firmó el acta de la Independencia?",
-        answers: {
+        pregunta = "¿En qué día se firmó el acta de la Independencia?",
+        opciones: {
         a = "10 de mayo",
         b = "9 de julio",
         c = "20 de junio",
         d = '25 de mayo',
         },
-        wright: 'd',
+        correcta: 'd',
     },
     {
-        question = "¿En qué año se prohibieron las corridas de toros en Buenos Aires",
-        answers: {
+        pregunta = "¿En qué año se prohibieron las corridas de toros en Buenos Aires",
+        opciones: {
         a = "1810",
         b = "1565",
         c = "1954",
         d = '1822',
         },
-        wright: 'd',
+        correcta: 'd',
     },
     {
-        question = "¿En qué año Sarmiento fue nombrado presidente?",
-        answers: {
+        pregunta = "¿En qué año Sarmiento fue nombrado presidente?",
+        opciones: {
         a = "1810",
         b = "1880",
         c = "1860",
         d = '1915',
         },
-        wright: 'b',
+        correcta: 'b',
     },
     {
-        question = "¿Cuándo se prohibió la esclavitud en la Argentina?",
-        answers: {
+        pregunta = "¿Cuándo se prohibió la esclavitud en la Argentina?",
+        opciones: {
         a = "1813",
         b = "1822",
         c = "1545",
         d = '1860',
         },
-        wright: 'a',
+        correcta: 'a',
     },
     {
-        question = "¿Quién fundó el primer asentamiento en Buenos Aires?",
-        answers: {
+        pregunta = "¿Quién fundó el primer asentamiento en Buenos Aires?",
+        opciones: {
         a = "Pedro de Mendoza",
         b = "Juan de Garay",
         c = "Manuel Belgrano",
         d = 'Perón',
         },
-        wright: 'a',
-    }
-
+        correcta: 'a',
+    },
     {
         pregunta: "¿En qué año se publicó El Aleph de Jorge Luis Borges?",
         opciones: {
@@ -222,7 +221,6 @@ var preguntas = [
         },
         correcta: 'b',
     },
-
     {
         pregunta: "¿Cuál es el título completo de la siguiente novela de Gabriel García Márquez: El amor en los tiempos del...?",
         opciones: {
@@ -232,7 +230,6 @@ var preguntas = [
         },
         correcta: 'a',
     },
-
     {
         pregunta: "¿Quién fundó la revista Sur?",
         opciones: {
@@ -242,7 +239,6 @@ var preguntas = [
         },
         correcta: 'b',
     },
-    
     {
         pregunta: "¿Qué personaje del Martín Fierro muere en el cuento de Borges, El fin?",
         opciones: {
@@ -252,7 +248,6 @@ var preguntas = [
         },
         correcta: 'c',
     }
-
 ];
 
 
