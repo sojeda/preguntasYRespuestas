@@ -133,7 +133,6 @@ var preguntas = [
         correcta: 'b',
     },
     {
-<<<<<<< HEAD
         pregunta: "¿Qué comen los Koalas?",
         opciones: {
             a: "Papas Fritas",
@@ -232,68 +231,68 @@ var preguntas = [
             d: "Muricio Macri" 
         },
         correcta: "a"
-=======
-        question = "¿En qué día se llevó a cabo la Revolución de mayo?",
-        answers: {
-        a = "10 de mayo",
-        b = "9 de julio",
-        c = "20 de junio",
-        d = '25 de mayo',
-        },
-        wright: 'd',
     },
     {
-        question = "¿En qué día se firmó el acta de la Independencia?",
-        answers: {
-        a = "10 de mayo",
-        b = "9 de julio",
-        c = "20 de junio",
-        d = '25 de mayo',
+        
+        pregunta : "¿En qué día se llevó a cabo la Revolución de mayo?",
+        opciones: {
+        a : "10 de mayo",
+        b : "9 de julio",
+        c : "20 de junio",
+        d : '25 de mayo',
         },
-        wright: 'd',
+        correcta: 'd',
     },
     {
-        question = "¿En qué año se prohibieron las corridas de toros en Buenos Aires",
-        answers: {
-        a = "1810",
-        b = "1565",
-        c = "1954",
-        d = '1822',
+        pregunta : "¿En qué día se firmó el acta de la Independencia?",
+        opciones: {
+        a : "10 de mayo",
+        b : "9 de julio",
+        c : "20 de junio",
+        d : '25 de mayo',
         },
-        wright: 'd',
+        correcta: 'd',
     },
     {
-        question = "¿En qué año Sarmiento fue nombrado presidente?",
-        answers: {
-        a = "1810",
-        b = "1880",
-        c = "1860",
-        d = '1915',
+        pregunta : "¿En qué año se prohibieron las corridas de toros en Buenos Aires",
+        opciones: {
+        a : "1810",
+        b : "1565",
+        c : "1954",
+        d : '1822',
         },
-        wright: 'b',
+        correcta: 'd',
     },
     {
-        question = "¿Cuándo se prohibió la esclavitud en la Argentina?",
-        answers: {
-        a = "1813",
-        b = "1822",
-        c = "1545",
-        d = '1860',
+        pregunta : "¿En qué año Sarmiento fue nombrado presidente?",
+        opciones: {
+        a : "1810",
+        b : "1868",
+        c : "1860",
+        d : '1915',
         },
-        wright: 'a',
+        correcta: 'b',
     },
     {
-        question = "¿Quién fundó el primer asentamiento en Buenos Aires?",
-        answers: {
-        a = "Pedro de Mendoza",
-        b = "Juan de Garay",
-        c = "Manuel Belgrano",
-        d = 'Perón',
+        pregunta: "¿Cuándo se prohibió la esclavitud en la Argentina?",
+        opciones: {
+        a : "1813",
+        b : "1822",
+        c : "1545",
+        d : '1860',
         },
-        wright: 'a',
->>>>>>> f83ae6248326dc599c14b9a6fb0aa54f5abc3ebb
-    }
-
+        correcta: 'a',
+    },
+    {
+        pregunta: "¿Quién fundó el primer asentamiento en Buenos Aires?",
+        opciones: {
+        a : "Pedro de Mendoza",
+        b : "Juan de Garay",
+        c : "Manuel Belgrano",
+        d : 'Perón',
+        },
+        correcta: 'a',
+    },
     {
         pregunta: "¿En qué año se publicó El Aleph de Jorge Luis Borges?",
         opciones: {
@@ -323,7 +322,6 @@ var preguntas = [
         },
         correcta: 'b',
     },
-
     {
         pregunta: "¿Cuál es el título completo de la siguiente novela de Gabriel García Márquez: El amor en los tiempos del...?",
         opciones: {
@@ -333,7 +331,6 @@ var preguntas = [
         },
         correcta: 'a',
     },
-
     {
         pregunta: "¿Quién fundó la revista Sur?",
         opciones: {
@@ -343,7 +340,6 @@ var preguntas = [
         },
         correcta: 'b',
     },
-    
     {
         pregunta: "¿Qué personaje del Martín Fierro muere en el cuento de Borges, El fin?",
         opciones: {
@@ -352,8 +348,48 @@ var preguntas = [
             c: "Martín Fierro",
         },
         correcta: 'c',
+    },
+    {
+        pregunta: "Los beatles fueron:",
+        opciones: {
+          a: "Banda de rock, nativa de Liverpool.",
+          b: "Banda de pop, nativa de Canada.",
+          c: "Banda de cuarteto, nativa de Argentina.",
+          d: "Banda de cumbia, nativa de Colombia."
+        },
+        correcta: "a"
+    },
+
+    {
+        pregunta: "¿Qué instrumento musical toca Lisa Simpson?",
+        opciones: {
+          a: "Bateria",
+          b: "Saxofon",
+          c: "Trompeta.",
+          d: "flautaa."
+        },
+        correcta: "b"
+    },
+
+    {
+        pregunta: "La comida favorita de Homer Simpson es:",
+        opciones: {
+          a: "Carne en asada",
+          b: "Cachapa",
+          c: "Donas.",
+          d: "Pizza"
+        },
+        correcta: "c"
+    },
+
+    {
+        pregunta: "¿Cual fue la empresa creadora del iphone?",
+        opciones: {
+          a: "Google",
+          b: "Samsung.",
+          c: "Facebook",
+          d: "Iphone"
+        },
+        correcta: "d"
     }
-
 ];
-
-
