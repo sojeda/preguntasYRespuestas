@@ -138,7 +138,7 @@ var preguntas = [
             a: "Papas Fritas",
             b: "Torta",
             c: "Caramelos",
-            d: "Hojas de Eucalipto" 
+            d: "Hojas de Eucalipto"
         },
         correcta: "d"
     },
@@ -148,7 +148,7 @@ var preguntas = [
             a: "Francia",
             b: "Italia",
             c: "Estados Unidos",
-            d: "Alemania" 
+            d: "Alemania"
         },
         correcta: "b"
     },
@@ -158,7 +158,7 @@ var preguntas = [
             a: "Francia",
             b: "Alemania",
             c: "Argentina",
-            d: "Inglaterra" 
+            d: "Inglaterra"
         },
         correcta: "a"
     },
@@ -168,7 +168,7 @@ var preguntas = [
             a: "1000",
             b: "50",
             c: "100",
-            d: "32" 
+            d: "32"
         },
         correcta: "c"
     },
@@ -178,7 +178,7 @@ var preguntas = [
             a: "José Mujica",
             b: "Emmanuel Macron",
             c: "Cristina Fernandez",
-            d: "Donald Trump" 
+            d: "Donald Trump"
         },
         correcta: "d"
     },
@@ -188,7 +188,7 @@ var preguntas = [
             a: "Azul",
             b: "Torta",
             c: "Caramelos",
-            d: "Campera" 
+            d: "Campera"
         },
         correcta: "a"
     },
@@ -198,7 +198,7 @@ var preguntas = [
             a: "Pepsi",
             b: "Torta",
             c: "Div",
-            d: "Function" 
+            d: "Function"
         },
         correcta: "c"
     },
@@ -208,7 +208,7 @@ var preguntas = [
             a: "Alemania",
             b: "Francia",
             c: "Italia",
-            d: "Argentina" 
+            d: "Argentina"
         },
         correcta: "d"
     },
@@ -218,7 +218,7 @@ var preguntas = [
             a: "Armando y Saul",
             b: "Sergio y Gabriel",
             c: "Lorenzo y Sofia",
-            d: "Eustaquio y Arturo" 
+            d: "Eustaquio y Arturo"
         },
         correcta: "b"
     },
@@ -228,12 +228,12 @@ var preguntas = [
             a: "Emmanuel Macron",
             b: "José Mujica",
             c: "Donald Trump",
-            d: "Muricio Macri" 
+            d: "Muricio Macri"
         },
         correcta: "a"
     },
     {
-        
+
         pregunta : "¿En qué día se llevó a cabo la Revolución de mayo?",
         opciones: {
         a : "10 de mayo",
@@ -393,3 +393,28 @@ var preguntas = [
         correcta: "d"
     }
 ];
+
+function buildTrivia () {
+    // 2. Desordenar las preguntas
+    preguntas.sort(function () {
+        return Math.random() - 0.5
+    })
+    console.log('Desordenar las preguntas')
+
+    // 3. Tomar los primeros tres
+    let tresPreguntas = preguntas.slice(0, 3)
+    console.log('Agarro las primeras tres')
+
+    // 4. Mostrar las preguntas
+    var salida = []
+    tresPreguntas.forEach(function (pregunta, numeroPregunta) {
+        // console.log(pregunta.pregunta)
+        salida.push(
+            `<div class="question">
+                ${pregunta.pregunta}
+            </div>`
+        )
+    })
+    trivia.innerHTML = salida.join('')
+}
+buildTrivia()
