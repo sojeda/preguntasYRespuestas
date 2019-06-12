@@ -228,7 +228,7 @@ var preguntas = [
             a: "Emmanuel Macron",
             b: "José Mujica",
             c: "Donald Trump",
-            d: "Muricio Macri"
+            d: "Mauricio Macri"
         },
         correcta: "a"
     },
