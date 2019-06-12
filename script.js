@@ -408,10 +408,23 @@ function buildTrivia () {
     // 4. Mostrar las preguntas
     var salida = []
     tresPreguntas.forEach(function (pregunta, numeroPregunta) {
-        // console.log(pregunta.pregunta)
+        // Imprimir las preguntas
+        var respuestas = []
+        for (opcion in pregunta.opciones) {
+            var respuesta = pregunta.opciones[opcion]
+            respuestas.push(
+                `<label>
+                    <input type="radio" name="opcion-${numeroPregunta}" value="${opcion}">
+                    <span>${opcion}: ${respuesta}</span>
+                </label>`
+            )
+        }
+
+        // Imprimir la pregunta
         salida.push(
             `<div class="question">
                 ${pregunta.pregunta}
+                ${respuestas.join('')}
             </div>`
         )
     })
