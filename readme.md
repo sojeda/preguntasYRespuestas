@@ -6,3 +6,4 @@ Proyecto Integrador
 3. Tomar las primeras tres
 4. Recorrer y mostrar las preguntas
 5. Recorrer y mostrar respuestas
+6. Comportamiento

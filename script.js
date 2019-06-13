@@ -1,6 +1,8 @@
 var trivia = document.getElementById("trivia");
 var results = document.getElementById("results");
 var submit = document.getElementById("submit");
+var cantidadDePreguntas = 3;
+
 var preguntas = [
     {
         pregunta: '¿Cuantas copas Libertadores tiene el equipo Boca juniors?',
@@ -402,12 +404,12 @@ function buildTrivia () {
     console.log('Desordenar las preguntas')
 
     // 3. Tomar los primeros tres
-    let tresPreguntas = preguntas.slice(0, 3)
+    let misPreguntas = preguntas.slice(0, cantidadDePreguntas)
     console.log('Agarro las primeras tres')
 
     // 4. Mostrar las preguntas
     var salida = []
-    tresPreguntas.forEach(function (pregunta, numeroPregunta) {
+    misPreguntas.forEach(function (pregunta, numeroPregunta) {
         // Imprimir las preguntas
         var respuestas = []
         for (opcion in pregunta.opciones) {
@@ -424,10 +426,38 @@ function buildTrivia () {
         salida.push(
             `<div class="question">
                 ${pregunta.pregunta}
-                ${respuestas.join('')}
+                <div class="answers">
+                    ${respuestas.join('')}
+                </div>
             </div>`
         )
     })
     trivia.innerHTML = salida.join('')
 }
 buildTrivia()
+
+function showResults ()
+{
+    const contenedoresDePreguntas = trivia.querySelectorAll('.question')
+    console.log(contenedoresDePreguntas)
+
+    // Tanto {contenedoresDePreguntas} como {preguntas}
+    // comparten el mismo indice. La primera de una,
+    // corresponde a la primera la otra.
+    preguntas.slice(0, cantidadDePreguntas).forEach(function (pregunta, numeroPregunta) {
+        console.log('-------------------------------------')
+        console.log('Iterando pregunta indice preguntas[' + numeroPregunta + ']')
+        const contenedorDePregunta = contenedoresDePreguntas[numeroPregunta]
+        const selector = `input[name=opcion-${numeroPregunta}]:checked`
+        const inputSeleccionado = contenedorDePregunta.querySelector(selector)
+        console.log(inputSeleccionado)
+
+        if(inputSeleccionado.value == pregunta.correcta) {
+            contenedorDePregunta.style.color = 'lightgreen'
+        } else {
+            contenedorDePregunta.style.color = 'red'
+        }
+    })
+}
+
+submit.addEventListener('click', showResults)
