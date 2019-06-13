@@ -439,6 +439,7 @@ buildTrivia()
 function showResults ()
 {
     const contenedoresDePreguntas = trivia.querySelectorAll('.question')
+    let cantidadRespuestasCorrectas = 0
     console.log(contenedoresDePreguntas)
 
     // Tanto {contenedoresDePreguntas} como {preguntas}
@@ -454,10 +455,16 @@ function showResults ()
 
         if(inputSeleccionado.value == pregunta.correcta) {
             contenedorDePregunta.style.color = 'lightgreen'
+            // Sumamos uno al contador de respuestas correctas
+            cantidadRespuestasCorrectas++
         } else {
             contenedorDePregunta.style.color = 'red'
         }
     })
+
+    if (cantidadRespuestasCorrectas === cantidadDePreguntas) {
+        alert('Todas las respuestas son correctas!')
+    }
 }
 
 submit.addEventListener('click', showResults)
