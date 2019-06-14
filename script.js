@@ -464,6 +464,7 @@ function showResults ()
 
     if (cantidadRespuestasCorrectas === cantidadDePreguntas) {
         alert('Todas las respuestas son correctas!')
+        buildTrivia()
     }
 }
 
