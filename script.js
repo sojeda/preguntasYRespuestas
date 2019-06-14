@@ -355,10 +355,10 @@ var preguntas = [
     {
         pregunta: "Los beatles fueron:",
         opciones: {
-          a: "Banda de rock, nativa de Liverpool.",
-          b: "Banda de pop, nativa de Canada.",
-          c: "Banda de cuarteto, nativa de Argentina.",
-          d: "Banda de cumbia, nativa de Colombia."
+          a: "Banda de rock, nativa de Liverpool",
+          b: "Banda de pop, nativa de Canada",
+          c: "Banda de cuarteto, nativa de Argentina",
+          d: "Banda de cumbia, nativa de Colombia"
         },
         correcta: "a"
     },
@@ -368,18 +368,18 @@ var preguntas = [
         opciones: {
           a: "Bateria",
           b: "Saxofon",
-          c: "Trompeta.",
-          d: "flautaa."
+          c: "Trompeta",
+          d: "flauta"
         },
         correcta: "b"
     },
 
     {
-        pregunta: "La comida favorita de Homer Simpson es:",
+        pregunta: "La comida favorita de Homero Simpson es:",
         opciones: {
-          a: "Carne en asada",
+          a: "Carne asada",
           b: "Cachapa",
-          c: "Donas.",
+          c: "Donas",
           d: "Pizza"
         },
         correcta: "c"
@@ -389,9 +389,9 @@ var preguntas = [
         pregunta: "¿Cual fue la empresa creadora del iphone?",
         opciones: {
           a: "Google",
-          b: "Samsung.",
+          b: "Samsung",
           c: "Facebook",
-          d: "Iphone"
+          d: "Apple"
         },
         correcta: "d"
     }
