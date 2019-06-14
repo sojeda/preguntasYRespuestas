@@ -1,6 +1,7 @@
 var trivia = document.getElementById("trivia");
 var results = document.getElementById("results");
 var submit = document.getElementById("submit");
+var mensaje = document.getElementById("mensaje")
 var cantidadDePreguntas = 3;
 
 var preguntas = [
@@ -440,31 +441,44 @@ function showResults ()
 {
     const contenedoresDePreguntas = trivia.querySelectorAll('.question')
     let cantidadRespuestasCorrectas = 0
-    console.log(contenedoresDePreguntas)
+    let cantidadPreguntasContestadas = 0
 
     // Tanto {contenedoresDePreguntas} como {preguntas}
     // comparten el mismo indice. La primera de una,
     // corresponde a la primera la otra.
     preguntas.slice(0, cantidadDePreguntas).forEach(function (pregunta, numeroPregunta) {
-        console.log('-------------------------------------')
-        console.log('Iterando pregunta indice preguntas[' + numeroPregunta + ']')
         const contenedorDePregunta = contenedoresDePreguntas[numeroPregunta]
         const selector = `input[name=opcion-${numeroPregunta}]:checked`
         const inputSeleccionado = contenedorDePregunta.querySelector(selector)
-        console.log(inputSeleccionado)
 
-        if(inputSeleccionado.value == pregunta.correcta) {
-            contenedorDePregunta.style.color = 'lightgreen'
-            // Sumamos uno al contador de respuestas correctas
-            cantidadRespuestasCorrectas++
-        } else {
-            contenedorDePregunta.style.color = 'red'
+        if (inputSeleccionado) {
+            cantidadPreguntasContestadas++
+            if(inputSeleccionado.value == pregunta.correcta) {
+                contenedorDePregunta.style.color = 'lightgreen'
+                // Sumamos uno al contador de respuestas correctas
+                cantidadRespuestasCorrectas++
+            } else {
+                contenedorDePregunta.style.color = 'red'
+            }
         }
     })
 
-    if (cantidadRespuestasCorrectas === cantidadDePreguntas) {
-        alert('Todas las respuestas son correctas!')
-        buildTrivia()
+    if (cantidadPreguntasContestadas === cantidadDePreguntas) {
+        if (cantidadRespuestasCorrectas === cantidadDePreguntas) {
+
+            mensaje.innerHTML = 'Todas las respuestas son correctas'
+            let contador = 6
+            setInterval(function () {
+            	contador--
+            	mensaje.innerHTML = `Recargando en ${contador} segundos`
+            	if (contador === 0)
+            		window.location.reload()
+            }, 1000)
+        } else {
+            mensaje.innerHTML = 'No todas las respuestas son correctas'
+        }
+    } else {
+        mensaje.innerHTML = 'Debe contestar todas las preguntas'
     }
 }
 
