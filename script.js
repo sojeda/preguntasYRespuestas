@@ -394,7 +394,57 @@ var preguntas = [
           d: "Apple"
         },
         correcta: "d"
-    }
+    },
+    {
+      pregunta: '¿Cuánto es 3 x 5?',
+          opciones: {
+            a: 6,
+            b: 43,
+            c: 15,
+            d: 2,
+          },
+          correcta: 'c',
+        },
+      {
+        pregunta: '¿Quién pintó la "Última Cena"',
+        opciones: {
+          a: 'Leonardo Da Vinci',
+          b: 'Picasso',
+          c: 'Maradonna',
+          d: 'Stephen Hawking',
+        },
+        correcta: 'a',
+      },
+      {
+      pregunta: '¿Cuántas patas tienen las arañas?',
+      opciones: {
+        a: 6,
+        b: 8,
+        c: 4,
+        d: 2,
+      },
+      correcta: 'b',
+      },
+      {
+      pregunta: '¿Cuántos corazones tienen los pulpos?',
+      opciones: {
+        a: 2,
+        b: 6,
+        c: 15,
+        d: 3,
+      },
+      correcta: 'd',
+      },
+      {
+      pregunta: '¿En qué país está ubicado el Taj Mahal?',
+      opciones: {
+        a: 'Arabia Saudita',
+        b: 'India',
+        c: 'Argentina',
+        d: 'Nueva Zelanda',
+      },
+      correcta: 'b',
+      },
 ];
 
 function buildTrivia () {
@@ -454,7 +504,7 @@ function showResults ()
         if (inputSeleccionado) {
             cantidadPreguntasContestadas++
             if(inputSeleccionado.value == pregunta.correcta) {
-                contenedorDePregunta.style.color = 'lightgreen'
+                contenedorDePregunta.style.color = 'rgb(61, 116, 55)'
                 // Sumamos uno al contador de respuestas correctas
                 cantidadRespuestasCorrectas++
             } else {

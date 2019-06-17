@@ -4,23 +4,20 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>Preguntas y Respuestas</title>
-    <style media="screen">
-        .question {
-            width: 100%;
-            margin-top: 1em;
-        }
-
-        .question .answers {
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
   </head>
   <body>
-    <div id="trivia"></div>
-    <button id="submit">Enviar Respuesta</button>
-    <div id="results"></div>
-    <p id="mensaje"></p>
-    <script src="script.js"></script>
+    <div class="logo">
+      <img src="imgs/logo.jpg" id="logo" alt="logo de gato">
+    </div>
+    <div class="outer">
+      <div class="inner">
+        <p id="presentacion">Bienvenido al juego, debes contestar todas las preguntas para ganar. <br> ¡Buena suerte!</p>
+        <div id="trivia"></div>
+        <button id="submit">Enviar Respuesta</button>
+        <div id="results"></div>
+        <p id="mensaje"></p>
+        <script src="script.js"></script>
+      </div>
+    </div>
   </body>
 </html>
